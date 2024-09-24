@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h2>Crear Usuario</h2>
 <form action="dashboard.php?page=create_user" method="POST">
     <label for="nombre">Nombre:</label>
-    <input type="nombre" id="nombre" name="nombre" required>
+    <input type="text" id="nombre" name="nombre" required>
     <label for="correo">Correo:</label>
     <input type="email" id="correo" name="correo" required>
 
