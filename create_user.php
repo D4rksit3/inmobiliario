@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
-    $contrasena_plana = $_POST['contrasena']
+    $contrasena_plana = $_POST['contrasena'];
     $contrasena_cifrada = password_hash($contrasena_plana, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO usuarios (nombre, correo, contrasena) VALUES (?, ?)";
